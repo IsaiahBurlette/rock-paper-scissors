@@ -16,6 +16,7 @@ function aI() {
 
 function playGame() {
     gameTally = 0;
+    drawScore = 0;
     computerScore = 0;
     userScore = 0;
     while (gameTally < 2){
@@ -24,6 +25,7 @@ function playGame() {
         if (userInput == computerInput) {
             alert("Draw!");
             gameTally ++;
+            drawScore++;
         }else if (userInput == "rock" && computerInput == "paper") {
             alert("Computer Won! Paper beats rock.");
             computerScore ++;
