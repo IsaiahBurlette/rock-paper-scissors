@@ -52,6 +52,11 @@ function playGame() {
         alert(`Computer score: ${computerScore}, Your score: ${userScore}`);
         if (computerScore == 1 && userScore == 1) {
             gameTally --;
+        }else if (computerScore == 1 && userScore == 0 && drawScore == 1) {
+            gameTally --;
+        }
+        else if (computerScore == 0 && userScore == 1 && drawScore == 1) {
+            gameTally --;
         }
     }
 }
